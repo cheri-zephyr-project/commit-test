@@ -51,7 +51,7 @@ set -e
 -p hobgoblin_riscv32cheri_zcheripurecap \
 -p hobgoblin_riscv64cheri \
 -p hobgoblin_riscv64cheri_zcheripurecap \
--T samples/cheri/boards/hobgoblin/hobgoblin_uarts \
+-T samples/cheri/cheri-boards/hobgoblin/hobgoblin_uarts \
 -v --short-build-path -O/tmp/twister-out \
 
 #TESTS

@@ -17,7 +17,7 @@ This application can be built and executed on the Codasip hobgoblin
 physical platform as follows:
 
 .. zephyr-app-commands::
-   :zephyr-app: samples/cheri/hobgoblin/hobgoblin_uarts
+   :zephyr-app: samples/cheri/cheri-boards/hobgoblin/hobgoblin_uarts
    :host-os: unix
    :board: hobgoblin_riscv64cheri
    :goals: build
@@ -27,7 +27,7 @@ Polling and NS16550 UART are selected as default.
 For selecting interrupts and uartlite in a west build add as follows:
 
 west build -p always -b hobgoblin_riscv64cheri_zcheripurecap \
-samples/cheri/hobgoblin/hobgoblin_uarts/ -DCHERI_TEST_UART_INTERRUPTS=ON \
+samples/cheri/cheri-boards/hobgoblin/hobgoblin_uarts/ -DCHERI_TEST_UART_INTERRUPTS=ON \
 -DDTC_OVERLAY_FILE=${ZEPHYR_BASE}/boards/codasip/hobgoblin_riscv64cheri/uart1.overlay
 
 Sample Output
